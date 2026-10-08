@@ -17,3 +17,6 @@ Single-file web app (`index.html`, no build step) for a job search in Norway and
 
 ## Roadmap
 See Settings > Roadmap and integrations inside the app (live discovery, database plus DOCX/PDF backend, scheduler and reminders).
+
+## Importing search results
+`data/indeed-shortlist-2026-10-08.json` holds 10 postings found through an Indeed connector search (DevOps, cloud and platform roles in Oslo and Amsterdam/Utrecht). Paste the file into Find Jobs > "Import results from an external search service". Items arrive marked "Imported, unverified" until you confirm each one at its original URL. Several postings were published months ago and may be closed.

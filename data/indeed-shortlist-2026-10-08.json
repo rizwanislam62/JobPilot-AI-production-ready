@@ -1,0 +1,122 @@
+[
+ {
+  "id": "JOBSEARCH_100025",
+  "title": "Cloud Engineer",
+  "company": "Lyse Energi (Lyse Tele AS)",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aavnzc9xrdhr",
+  "postedAt": "2026-09-25",
+  "deadline": "2026-10-18",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Cloud Engineer\nVi søker en dyktig Cloud Engineer som kan bygge, automatisere og optimalisere infrastrukturen som driver våre høyytelses telekom- og bredbåndstjenester.\nAnsvarsområder\nDesigne og vedlikeholde CI/CD‑pipeliner for effektiv utrulling av egenutviklet og leverandørprogramvare.\nUtvikle automatiseringsløsninger ved bruk av Puppet og Ansible.\nAdministrere container‑miljøer (OpenShift, Kubernetes) for dynamisk skalering av applikasjoner.\nAutomatisere server‑provisjonering, utrulling og konfigurasjon for å redusere operasjonell belastning.\nBygge interne verktøy for å forbedre DevOps‑arbeidsflyt, synlighet i infrastrukturen og automatisering.\nEtablere og drifte observasjonsplattformer som Prometheus, Grafana, Loki, Vector eller OpenTelemetry.\nIdentifisere og løse ytelsesflaskehalser, uregelmessigheter og sikkerhetsrisikoer i plattforminfrastrukturen.\nJobbe tett med ingeniører og utviklingsteam for sømløs integrasjon av tjenester.\nDokumentere interne verktøy, automatiseringsprosesser og plattformforbedringer.\nØnskelig bakgrunn og erfaring\nSolid erfaring med Linux/Unix‑administrasjon.\nGod forståelse av nettverk (TCP/IP, DNS, ruting, brannmurer og lastbalansering).\nErfaring med leveranser og drift av interne skyplattformer.\nGod kjennskap til container‑teknologi (OpenShift, Kubernetes, Helm) og orkestreringsverktøy.\nAvansert kunnskap om automatiseringsverktøy som Puppet og Ansible.\nErfaring med å utvikle automasjonsskript og verktøy i Python og Bash.\nKjennskap til overvåkings- og observasjonsverktøy (Prometheus, Grafana, OpenTelemetry).\nHvem er du?\nVi ser etter en analytisk og løsningsorientert Cloud Engineer som kan håndtere utfordringer i store plattformmiljøer, arbeide selvstendig og samtidig samarbeide tett med nettverks‑ og sikkerhetsteam. Du kommuniserer godt med både tekniske og ikke‑tekniske interessenter.\nBakgrunnssjekk på aktuelle kandidater vil bli gjennomført. Aktuelle kandidater kan bli spurt om informasjon angående tilknytning til høyrisikoland i tilfeller hvor dette er nødvendig for en videre sikkerhetsvurdering."
+ },
+ {
+  "id": "JOBSEARCH_100028",
+  "title": "Cloud Native Engineer",
+  "company": "Sopra Steria",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aaqdgjvj4w4q",
+  "postedAt": "2026-06-09",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Cloud Native Engineer\nVil du bygge plattformene som gjør moderne utvikling mulig? Vi ser etter flere teknologer som vil jobbe med DevOps, automasjon og cloud native-plattformer hos Sopra Steria.\nHva kan du jobbe med hos oss?\nDu vil jobbe med teknologi og praksiser som Kubernetes, containere, CI/CD, GitOps, Infrastructure as Code, observability og skyplattformer som Azure, AWS og Google Cloud.\nHvem ser vi etter?\nVi ser etter deg som har erfaring med DevOps, cloud native-teknologi, plattformarbeid eller moderne drift. Du har gjerne jobbet med Kubernetes, CI/CD-verktøy og skyplattformer, og har interesse for automasjon og Infrastructure as Code. Du er nysgjerrig, lærevillig og opptatt av robuste, sikre og skalerbare løsninger.\nSopra Steria har kunder og prosjekter som kan kreve sikkerhetsklarering på ulike nivåer."
+ },
+ {
+  "id": "JOBSEARCH_100043",
+  "title": "Platform Engineer - Azure",
+  "company": "Brødrene Dahl (listed as DeepOcean on Indeed)",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aasvz97kj8yk",
+  "postedAt": "2026-10-01",
+  "deadline": "2026-10-14",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Platform Engineer – Azure\nArbeidsspråk Norsk. Søk senest onsdag 14. oktober.\nSom Platform Engineer vil du utvikle, automatisere og videreutvikle vår Microsoft Azure-plattform. Du vil jobbe med Infrastructure as Code, primært med Bicep og/eller Terraform, og bidra til gode prinsipper for struktur, governance, sikkerhet og automatisering i Azure.\nEn viktig del av rollen er å utvikle og forbedre CI/CD-pipelines og automatiserte leveranseløp. GitHub vil være et sentralt verktøy, blant annet gjennom bruk av GitHub Actions.\nFinOps er en viktig del av rollen. Du vil jobbe med kostnadsoppfølging, optimalisering og transparens rundt bruk av skytjenester.\nI tillegg vil du bidra til gode løsninger for overvåking, logging, alarmering og operasjonell innsikt.\nVi tror du har erfaring med flere av følgende områder:\nMicrosoft Azure og sentrale Azure-tjenester\nInfrastructure as Code, for eksempel Bicep eller Terraform\nGit og GitHub\nGitHub Actions eller tilsvarende CI/CD-verktøy\nAutomatisering av infrastruktur, konfigurasjon og deployments\nAzure governance, identitet, tilgangsstyring og sikkerhet\nOvervåking og logging i skyløsninger\nFinOps, kostnadsoptimalisering eller kostnadsstyring av skytjenester\nScripting og automatisering, for eksempel med PowerShell eller Azure CLI\nDet er viktigere for oss at du har god teknologiforståelse, nysgjerrighet og evne til å lære enn at du kan krysse av på absolutt alle punktene."
+ },
+ {
+  "id": "JOBSEARCH_100044",
+  "title": "Cloud Platform Engineer",
+  "company": "Capgemini",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aarhtj7rmw8y",
+  "postedAt": "2026-05-08",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Cloud Platform Engineer\nVeilede kunder på deres reise mot DevSecOps og hjelpe dem med å bygge plattformer og landingssoner med infrastruktur som kode, samt implementere automatisering gjennom CI/CD pipelines.\nI denne rollen vil du jobbe med teknologier som: Microsoft Azure / Amazon Web Services Kubernetes Terraform GitHub Actions / CircleCI / Jenkins Elastic Stack / Grafana\nDin profil\nMinimum 4 års erfaring med Azure eller AWS\nErfaring med å jobbe tett sammen med utviklere i utviklingsprosjekter\nGod muntlig og skriftlig fremstillingsevne på norsk og engelsk (flytende)\nEr godt kjent med CAF-rammeverkene (Cloud Adoption Framework) til Azure og AWS, og det er en fordel om du har sertifiseringer innen noen av teknologiene nevnt over\nNote: All candidates must be able to communicate fluently in Norwegian."
+ },
+ {
+  "id": "JOBSEARCH_100039",
+  "title": "IT & Infrastructure Engineer",
+  "company": "Six Robotics",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aacpscj9y9mc",
+  "postedAt": "2026-09-25",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "IT & Infrastructure Engineer\nAbout the role\nYou will take hands-on ownership of day-to-day IT operations and infrastructure in a Linux-heavy, on-premises environment. This is a role for a generalist.\nWhat you will do\nOperate and troubleshoot our Linux-based infrastructure and internal services, including servers, storage, networking, virtualisation, backups and monitoring.\nDo hands-on data-centre work: installation, cabling, hardware replacement and fault-finding.\nSupport employees and endpoints across Linux, Windows and macOS, and manage identity, access, onboarding, offboarding and equipment.\nHandle incidents and vendors, keep documentation current, and drive ongoing improvements to our infrastructure.\nAutomate recurring work and reduce operational dependencies.\nWhat we are looking for\n5+ years of hands-on experience in IT infrastructure, with strong Linux skills.\nPractical experience from on-premises infrastructure and data-centre environments.\nA solid understanding of servers, storage, networking and virtualisation, and a structured approach to troubleshooting.\nComfort supporting both infrastructure and end users.\nNice to have:\nExperience with any of the following is a plus: virtualisation platforms such as Proxmox, OpenStack or VMware, KVM and Docker, CI/CD infrastructure and Kubernetes.\nSecurity Clearance Requirement\nAll employees at Six Robotics must be eligible for security clearance."
+ },
+ {
+  "id": "JOBSEARCH_100056",
+  "title": "Engineer, Network Operations, Operation Center",
+  "company": "Statkraft",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aaxztyzvgxs7",
+  "postedAt": "2026-10-02",
+  "deadline": "2026-10-25",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Engineer, Network Operations, Operation Center\nIn your role you will:\nMonitor, operate, and maintain enterprise network infrastructure to ensure high availability, performance, and reliability.\nTroubleshoot and resolve network incidents, including routing, switching, wireless, WAN, and connectivity-related issues.\nPerform proactive monitoring, analysis, and remediation of network alerts and service degradations.\nParticipate in incident, problem, and change management processes in accordance with ITIL best practices.\nProvide operational support for global network services within a 24/7 operational environment.\nContribute to the automation of operational network tasks, monitoring, and remediation processes.\nQualifications\nThe applicant must have a valid background check conducted by Semac or an equivalent provider.\nPractical experience in configuring, operating, and troubleshooting network infrastructure and connectivity services.\nKnowledge and competence equivalent to Cisco CCNA level or higher.\nUnderstanding of cloud networking concepts and connectivity solutions across platforms such as Microsoft Azure.\nExperience with enterprise firewall technologies, preferably including Cisco, Check Point, and Azure Firewall solutions.\nKnowledge of, or a strong interest in learning, modern infrastructure and automation technologies such as Infrastructure as Code (IaC), Bicep, Git, and related tooling.\nSolid understanding of network security principles, cybersecurity best practices, and operational resilience.\nKnowledge of ITIL practices and IT Service Management (ITSM) processes.\nExcellent communication skills in both Norwegian and English, written and spoken.\nThe applicant must be eligible for security clearance and authorisation."
+ },
+ {
+  "id": "JOBSEARCH_100030",
+  "title": "Experienced Cloud Engineer (Azure)",
+  "company": "Orange Business",
+  "location": "Oslo",
+  "country": "Norway",
+  "url": "https://to.indeed.com/aayrhnwdh7ws",
+  "postedAt": "2026-02-27",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Experienced Cloud Engineer (Azure)\nSom Senior Cloud Engineer/Architect vil du jobbe med blant annet:\nInfrastructure as Code-verktøy som Terraform og Bicep, samt skripting og automatisering med PowerShell\nCI/CD-verktøy som Azure DevOps, GitHub og Bitbucket\nCloud Native Observability-verktøy som Prometheus, Grafana og Datadog\nVi ser etter deg som har:\nSolid erfaring med Azure, gjerne 3-4 år eller mer\nErfaring med design og arbeid innen CI/CD-pipelines, automatisering, Infrastructure-as-Code, DevOps, DevSecOps og skybaserte leveransemodeller\nFerdigheter i Terraform/Bicep/ARM/Pulumi, Ansible, Powershell\nNorsk språkferdighet på C1-nivå eller høyere (påkrevd)\nProfesjonelle engelskkunnskaper, skriftlig og muntlig\nDet er ikke et krav, men det er en fordel om du også har kjennskap til mikrotjenester og Kubernetes."
+ },
+ {
+  "id": "JOBSEARCH_100070",
+  "title": "Platform Engineer",
+  "company": "LINKIT",
+  "location": "Utrecht (Vleuten-De Meern)",
+  "country": "Netherlands",
+  "url": "https://to.indeed.com/aa2vklnzyj4z",
+  "postedAt": "2026-09-30",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Platform Engineer\nAls Platform Engineer ga je aan het werk bij toonaangevende opdrachtgevers zoals Defensie, KLM en ASML, aan complexe infrastructuurvraagstukken op seniorniveau. Je ontwerpt, bouwt en beheert Cloudinfrastructuur en CI/CD-pipelines en zet Kubernetes-clusters op binnen Europese Cloudproviders. Met Infrastructure as Code, bijvoorbeeld Terraform, maak je infrastructuren reproduceerbaar en schaalbaar.\nWat we vragen\nMinimaal 4 jaar ervaring in een DevOps-, Platform Engineering- of infrastructuurrol, bij voorkeur binnen de Nederlandse overheid.\nAantoonbare ervaring met containers en orchestratieplatformen zoals Kubernetes en Docker, gecombineerd met CI/CD-tooling zoals GitHub Actions, GitLab CI of Jenkins, en Infrastructure as Code, bijvoorbeeld Terraform.\nErvaring met cloud-agnostisch werken binnen publieke en private cloudomgevingen, waaronder Europese providers als STACKIT, OVH en Scaleway en platformen zoals OpenStack.\nErvaring met automatisering en scripting, met tools en talen zoals Python, Go, Ansible en/of Chef.\nKennis van netwerken, beveiliging en observability binnen cloud-native en on-premise omgevingen.\nVoldoe je niet aan elk punt, maar wel nieuwsgierig? Dan komen we alsnog graag met je in contact."
+ },
+ {
+  "id": "JOBSEARCH_100069",
+  "title": "Cloud Engineer",
+  "company": "a.s.r. Verzekeringen",
+  "location": "Utrecht",
+  "country": "Netherlands",
+  "url": "https://to.indeed.com/aajcxhv2mwdx",
+  "postedAt": "2026-08-05",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "Cloud Engineer\nAls Cloud Engineer bij a.s.r. werk je aan het Azure-platform en de shared services die de basis vormen voor honderden workloads.\nje ontwerpt, ontwikkelt en verbetert het Azure‑platform en shared services\nje ontwikkelt en beheert gestandaardiseerde Infrastructure as Code-componenten met Bicep, ARM en YAML\nje werkt aan platformdiensten voor networking, security en connectivity\nje borgt betrouwbaarheid, security en compliance\nDeze vacature is echt iets voor jou, want jij\nhebt minimaal een afgeronde hbo-opleiding en 3 jaar relevante ervaring met Azure Cloud\nhebt ervaring met Infrastructure as Code en DevOps‑pipelines\nhebt ervaring met Azure-platformdiensten voor networking, security en connectivity, zoals Azure Application Gateway, Azure Front Door, DNS, WAF en Virtual Networks\nwerkt zelfstandig in een complexe, enterpriseomgeving\nSalary 4.100 - 5.500 EUR gross per month (38 hours)."
+ },
+ {
+  "id": "JOBSEARCH_100050",
+  "title": "DevOps Engineer",
+  "company": "ABN AMRO",
+  "location": "Amstelveen",
+  "country": "Netherlands",
+  "url": "https://to.indeed.com/aa8rp6mf7htl",
+  "postedAt": "2026-09-22",
+  "deadline": "",
+  "source": "Indeed (connector search 2026-10-08)",
+  "description": "DevOps Engineer\nWe are seeking an experienced DevOps Engineer to take ownership of our hybrid infrastructure environment. You will manage on-premises infrastructure supporting COTS applications, while also driving our Azure DevOps practices, CI/CD pipelines, and Azure cloud infrastructure.\nKey Responsibilities\nMaintain and support on-premises infrastructure hosting COTS applications\nProactively monitor systems, troubleshoot issues, and drive root-cause analysis and remediation\nPlan and execute infrastructure changes, upgrades, patching, and routine maintenance\nManage and administer Azure DevOps, including repositories, boards, and build/release pipelines\nDesign, build, and maintain CI/CD pipelines to enable reliable and automated deployments\nManage Azure infrastructure, including provisioning, configuration, upgrades, and ongoing maintenance\nImplement Infrastructure as Code (IaC) practices for consistent and repeatable deployments\nProvide evidence and documentation for IT guardrails to demonstrate compliance with ECB policies\nMust have:\nA relevant degree (e.g. Computer/Information Science, or other IT related background).\nProven experience as a DevOps Engineer or in a similar infrastructure/reliability role\nStrong hands-on experience managing on-premises infrastructure (Windows/Linux servers, networking, storage, virtualization)\nSolid expertise with Azure DevOps, CI/CD pipeline design, and Microsoft Azure services\nExperience with Infrastructure as Code tools (e.g., ARM/Bicep)\nStrong scripting skills (PowerShell, Bash, or similar)\nExcellent English oral and written communication skills\nNice to have:\nUnderstanding of regulatory compliance frameworks, ideally within financial services\nExperience with monitoring, logging, and reliability engineering practices\nExcellent Dutch oral and written communication skills"
+ }
+]

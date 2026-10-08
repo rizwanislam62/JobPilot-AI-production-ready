@@ -213,43 +213,57 @@ const detectTerms=(text,withP)=>{const s=String(text||'').toLowerCase();return T
 
 /* ---------- profile ---------- */
 function seedProfile(){
- const b=(text,metric)=>({id:uid(),text,metric:metric||'',metricVerified:false});
+ const b=(text)=>({id:uid(),text,metric:'',metricVerified:false});
  return{
-  name:'',headline:'Cloud & DevOps Engineer',email:'',phone:'',location:'',links:'',
-  summary:'Cloud and DevOps engineer with experience in cloud infrastructure, CI/CD, security scanning, network operations and IT support. MSc student in Cloud-based Services and Operations at OsloMet.',
+  name:'Muhammad Rizwan',headline:'DevOps / Systems Engineer',email:'rizwanislam62@gmail.com',phone:'',location:'Oslo, Norway',links:'linkedin.com/in/rizwancomputerengineer',
+  summary:'DevOps / Systems Engineer with hands-on experience in Docker, GitHub Actions and Jenkins CI/CD pipelines, Git-based version control, and Linux system administration. Strong understanding of networking (TCP/IP, DNS, firewalls) and cloud platforms (AWS, Azure). Experienced in building centralized security scanning pipelines, containerized microservice architectures, and infrastructure automation. Familiar with VMware vSphere, IaC tools (Terraform), and security best practices in DevOps environments.',
   targets:{primary:['DevOps Engineer','Cloud Engineer','Junior DevOps Engineer','Associate DevOps Engineer','Cloud Support Engineer','Platform Engineer'],secondary:['IT Infrastructure Engineer','Systems Engineer','Network Engineer','Cloud Security Engineer','IT Support Engineer'],markets:['Norway','Netherlands'],cities:['Oslo']},
   workAuth:{Norway:'unknown',Netherlands:'unknown',Other:'unknown'},
   languages:[{id:uid(),lang:'English',level:'',confirmed:false}],
   years:{total:5,relevant:1,estimated:true},
   experience:[
-   {id:uid(),title:'DevOps Engineer',company:'Sideline Technologies',dates:'2026',bullets:[
-    b('Worked with approximately 52 GitHub repositories and ran security scanning with Semgrep, Trivy, Gitleaks and ClamAV'),
-    b('Configured Nginx reverse proxy and remediated secrets in .NET projects'),
-    b('Investigated a memory issue in a Java application running on EC2'),
-    b('Planned ECS Fargate architecture for web BFF, mobile BFF and SSO components'),
-    b('Worked with self-hosted CI/CD runners')]},
-   {id:uid(),title:'Cloud Infrastructure Engineer',company:'Appworks',dates:'2025',bullets:[
-    b('Set up WireGuard VPN on DigitalOcean, IS Hosting and Contabo infrastructure'),
-    b('Worked with Grafana monitoring','~25% improvement in reliability')]},
-   {id:uid(),title:'Service Engineer',company:'Huawei',dates:'2023 - 2025',bullets:[
-    b('Supported IP Datacom projects for Bahrain STC and Saudi Zain'),
-    b('Worked across more than 100 network sites'),
-    b('Worked with VRRP, loopback interfaces, BFD and Huawei NCE/FTK tools'),
-    b('Worked with NE40E, NE8000, ATN980C, ATN910C and S9300 equipment')]},
-   {id:uid(),title:'System Engineer',company:'Touchstone Systems',dates:'2021 - 2023',bullets:[
-    b('Delivered L1 IT support for more than 500 employees'),
-    b('Managed device inventory covering approximately 1,000 devices','~20% improvement in ticket-handling efficiency')]}],
+   {id:uid(),title:'DevOps Engineer',company:'Sideline B.V.',dates:'02/2026 - 08/2026',bullets:[
+    b('Designed and deployed a centralized security scanning pipeline (Semgrep, Trivy, Gitleaks, ClamAV) covering ~52 repositories across the organization\'s GitHub org, automatically polling for new commits and uploading findings as build artifacts'),
+    b('Deployed and managed multiple applications on shared hosts using Nginx as a reverse proxy, routing incoming traffic to the correct backend service based on domain/path-based rules and upstream configs'),
+    b('Uncovered hardcoded AWS credentials and third-party API keys during a security audit of a production .NET service; led remediation including credential rotation and git history purge'),
+    b('Diagnosed a recurring production EC2 outage traced to a Java-based vulnerability scanner exhausting memory on an under-resourced instance; resolved via swap configuration, per-container memory limits, and PSI-based monitoring'),
+    b('Architected an AWS ECS Fargate migration plan for three containerized .NET microservices (Web BFF, Mobile BFF, SSO) to replace a single shared EC2 host, enabling independent autoscaling per service'),
+    b('Built and maintained CI/CD pipelines using GitHub Actions with self-hosted runners across multiple production codebases (.NET APIs, Vue.js frontends, Next.js apps), resolving pipeline issues spanning dependency versioning, encrypted environment management, and container registry authentication'),
+    b('Administered AWS infrastructure (EC2, ECR, RDS, S3, CloudWatch/SNS alerting) and Azure infrastructure (VMs, Automation Runbooks with Managed Identity, Container Instances) for production workloads'),
+    b('Led incident response for a compromised developer IDE account and an identified supply-chain malware injection across org repositories, producing formal remediation documentation and preventive tooling')]},
+   {id:uid(),title:'Cloud Infrastructure Engineer',company:'Appworks',dates:'04/2025 - 05/2025',bullets:[
+    b('Configured Azure VNets, VNet Peering, and Load Balancers. Implemented Application Gateway with WAF'),
+    b('Automated deployments using Terraform and ARM templates'),
+    b('Managed WireGuard VPN across multiple VPS environments'),
+    b('Supported CI/CD pipelines for infrastructure changes')]},
+   {id:uid(),title:'IP Datacom Engineer',company:'GSC-Huawei',dates:'01/2023 - 04/2025',bullets:[
+    b('Migrated over 50 services from legacy switches to aggregation routers in the STC project'),
+    b('Removed OSPF junk data and transitioned sites from OSPF to IS-IS protocols'),
+    b('Rolled out new sites and managed service migrations and VRRP configurations for backup'),
+    b('Executed clock synchronization using PTP configuration from uplink routers'),
+    b('Produced detailed Low-Level Designs (LLD), High-Level Designs (HLD), MOPs, and solution scripts'),
+    b('Integrated FTK and live configurations on routers and switches, including NE0E, NE8000, ATN980C, and S93000'),
+    b('Achieved 100% service uptime during critical migrations'),
+    b('Integrated Azure ExpressRoute for hybrid connectivity')]},
+   {id:uid(),title:'System Engineer',company:'Touchstone Communications',dates:'07/2021 - 01/2023',bullets:[
+    b('Managed Windows Server, AD, DNS, DHCP, and Group Policies'),
+    b('Integrated Azure AD with on-prem AD, implemented MFA and Conditional Access'),
+    b('Administered Microsoft 365 services, including Exchange, SharePoint, OneDrive, and Teams'),
+    b('Configured Azure firewall rules, VPN gateways, and secure access'),
+    b('Performed vulnerability scanning, patching, and OS hardening'),
+    b('Automated backups, logs, and provisioning using PowerShell and Bash'),
+    b('Implemented endpoint protection via Microsoft Defender')]}],
   education:[
-   {id:uid(),degree:'MSc, Cloud-based Services and Operations',school:'OsloMet, Norway',dates:'2026 - 2028',status:'in-progress'},
-   {id:uid(),degree:"Bachelor's degree, Computer Engineering",school:'COMSATS University Islamabad, Abbottabad campus',dates:'',status:'completed'}],
-  skills:['Azure','AWS','Docker','GitHub Actions','Nginx','CI/CD (GitHub Actions, self-hosted runners)','Security scanning (Semgrep, Trivy, Gitleaks, ClamAV)','ECS Fargate','EC2','WireGuard','Grafana','Prometheus','Loki','Jaeger','OpenTelemetry','IP networking (VRRP, BFD, loopback interfaces)','Huawei NCE/FTK','Active Directory','Access management','IT troubleshooting','L1 IT support','Device inventory management'],
-  certs:['Microsoft Azure Administrator Associate (AZ-104)','AWS Technical Essentials','AWS Bootcamp','Oracle Cloud Infrastructure certification','Docker Fundamentals'],
+   {id:uid(),degree:'MSc in Applied Computer and Information Technology (Specialization: Cloud-Based Services and Operations)',school:'OsloMet - Oslo Metropolitan University',dates:'08/2026 - 2028',status:'in-progress'},
+   {id:uid(),degree:'Bachelor of Science in Computer Engineering',school:'COMSATS University Islamabad, Abbottabad',dates:'09/2016 - 09/2020',status:'completed'}],
+  skills:['Microsoft Azure','AWS','Oracle Cloud','Docker','Docker Compose','Nginx (reverse proxy, upstream configs)','Terraform','Git','GitHub Actions (self-hosted runners)','Jenkins','AWS CI/CD','Infrastructure as Code with Terraform','Linux system administration','Azure AD','Office 365','Semgrep','Trivy','Gitleaks','ClamAV','Vulnerability scanning','Incident response','OSPF','BGP','IS-IS','MPLS','VLANs','VRRP','DHCP','NAT','DNS','NTP','TCP/IP','Firewalls','IP subnetting (IPv4/IPv6)','Active Directory','Azure Virtual Machine','Azure Virtual Network','ALB','Windows Server','PowerShell','Bash','Microsoft Defender','VMware vSphere (familiar)'],
+  certs:['Microsoft Azure Administrator Associate (AZ-104)','Cisco CCNA Routing and Switching (Training Certificate)','AWS Technical Essentials','Docker Training Course for the Absolute Beginner','AWS Cloud Practitioner','Oracle Cloud Infrastructure'],
   learning:['Kubernetes','Linux hardening','Monitoring','Logging','Azure networking'],
   projects:[
-   {id:uid(),name:'5G lab',desc:'Lab involving OpenAirInterface, Open5GS, Docker, Prometheus, Grafana, Loki, Jaeger, OpenTelemetry and FlexRIC, with monitoring and telemetry collection across RAN and core-network components'},
-   {id:uid(),name:'GitHub repository security scanning pipeline',desc:'Security scanning pipeline for GitHub repositories'},
-   {id:uid(),name:'IoT collision detection and warning system',desc:"Bachelor's final-year project"}],
-  masterCvText:'',masterCvUpdated:''
+   {id:uid(),name:'Azure infrastructure for internal systems',desc:'Created Azure-based infrastructure for internal systems with Active Directory, VPN, and backups'},
+   {id:uid(),name:'Hub-and-spoke network with Terraform',desc:'Developed Hub and 2 Spokes, Azure Firewall, Virtual Network, Virtual Machine, MySQL, Private Endpoint, VNET Peering, UDR using Terraform scripts'},
+   {id:uid(),name:'Security and governance in Azure',desc:'Configured Network Security Groups (NSGs) and Azure Policies to meet compliance, Azure Active Directory, and IAM MFA'}],
+  masterCvText:'',masterCvUpdated:'',seed:'resume-2026-10'
  };
 }
 function seedSettings(){return{weights:{tech:30,exp:25,resp:20,edu:10,elig:15},applyAt:70,gapsAt:50,followUpDays:7,cvPages:1,language:'English',includeUnverified:false,includePhone:false,includeLinks:true}}
@@ -336,7 +350,7 @@ const CONCEPTS=[
 ];
 const CERT_PATTERNS=[['AZ-104',/az-?104/i],['AZ-400',/az-?400/i],['AZ-900',/az-?900/i],['AWS Certified',/aws certified/i],['CKA',/\bcka\b/i],['CKAD',/\bckad\b/i],['CKS',/\bcks\b/i],['Terraform Associate',/terraform associate/i],['CCNA',/\bccna\b/i],['CCNP',/\bccnp\b/i],['ITIL',/\bitil\b/i],['Security+',/security\+/i],['CISSP',/\bcissp\b/i],['RHCSA',/\brhcsa\b/i],['HCIA/HCIP',/\bhci[ap]\b/i]];
 const LANGS=[['English',/\benglish\b|\bengelsk\b/i],['Norwegian',/\bnorwegian\b|\bnorsk\b|\bnoors\b/i],['Dutch',/\bdutch\b|\bnederlands\b/i],['German',/\bgerman\b|\bdeutsch\b/i],['Swedish',/\bswedish\b|\bsvenska\b/i],['Danish',/\bdanish\b|\bdansk\b/i],['French',/\bfrench\b/i]];
-const LANG_REQ_RX=/fluent|flytende|must|required|mandatory|krav|essential|excellent|proficien|native|business|written and (?:spoken|verbal)|spoken and written|command|vloeiend|vereist|very good|strong/i;
+const LANG_REQ_RX=/fluent|flytende|must|required|mandatory|krav|essential|excellent|proficien|native|business|written and (?:spoken|verbal)|spoken and written|command|vloeiend|vereist|very good|strong|arbeidsspr[åa]k|working language|spr[åa]kkrav|c1/i;
 const AUTH_RX=/work permit|right to work|work authori[sz]ation|eligible to work|legally (?:allowed|entitled|authori[sz]ed)|eu\/eea|eea citizen|eu citizen|residence permit|arbeidstillatelse|oppholdstillatelse|visa|sponsor|relocat|security clearance|sikkerhetsklarering|politiattest|werkvergunning/i;
 const AUTH_REQ_RX=/(?:no|not|cannot|can't|unable to|do not|don't|won't|without)\s+(?:\w+\s+)?(?:visa\s+)?sponsor|must (?:already )?(?:have|hold|be (?:legally )?(?:eligible|allowed|authori[sz]ed|entitled))|only (?:candidates|applicants)|right to work in|eligible to work in|arbeidstillatelse er et krav|krav om|required to (?:have|hold)/i;
 const AUTH_OFFER_RX=/sponsorship (?:is )?available|we (?:can|will) sponsor|visa support|relocation (?:package|support|assistance)|we offer relocation|we sponsor|help with relocation/i;
@@ -452,6 +466,7 @@ function analyzeJob(job,profile,settings){
   else{status='unknown';ratio=it.level==='required'?.35:it.level==='implied'?.6:.5;msg=`${it.lang} (${it.level}): your proficiency is not confirmed in your profile.`}
   if(status==='barrier')barriers.push({kind:'language',msg});
   else if(status==='unknown'&&it.level==='required')unknowns.push({soft:true,msg});
+  else if(status==='unknown'&&it.level==='implied'&&it.lang!=='English')unknowns.push({soft:true,msg:`The posting is written in ${it.lang}, so ${it.lang} is probably expected even though it is not stated as a requirement. Check before applying.`});
   else if(status==='unknown')unknowns.push(msg);
   return{...it,status,ratio,msg};
  });
@@ -540,12 +555,12 @@ function buildCV(profile,job,an,opt){
   const strong=an.terms.filter(t=>t.status==='strong').sort((a,b)=>RANK[b.level]-RANK[a.level]).map(t=>t.k).slice(0,6);
   const role=opt.targetRole||job.title;
   const parts=[`${profile.headline||'Cloud and DevOps engineer'} targeting ${role} roles${opt.country?' in '+opt.country:''}.`];
-  if(strong.length)parts.push(`Hands-on experience with ${strong.join(', ')}, gained across DevOps, cloud infrastructure, network service engineering and IT support roles.`);
-  else parts.push('Experience across DevOps, cloud infrastructure, network service engineering and IT support roles.');
+  if(strong.length)parts.push(`Hands-on experience with ${strong.join(', ')}, gained as ${[...new Set(profile.experience.map(e=>e.title))].slice(0,3).join(', ')}.`);
+  else parts.push(`Experience as ${[...new Set(profile.experience.map(e=>e.title))].slice(0,3).join(', ')}.`);
   const ms=profile.education.find(e=>/master|msc/i.test(e.degree));
   if(ms)parts.push(`${ms.status==='completed'?'Holds':'Currently studying for'} ${ms.degree.replace(/^MSc, /,'MSc in ')} at ${ms.school.split(',')[0]}${ms.dates?' ('+ms.dates+')':''}.`);
-  const jk=jdKeys;const cert=profile.certs.find(c=>detectTerms(c,false).some(t=>jk.has(t.k)));
-  if(cert)parts.push(`Certified: ${cert}.`);
+  const jk=jdKeys;const cert=profile.certs.find(c=>!/training/i.test(c)&&detectTerms(c,false).some(t=>jk.has(t.k)));
+  if(cert)parts.push(`Certification: ${cert}.`);
   summary=parts.join(' ');
   changes.push({what:'Professional summary rewritten',why:`Targets "${role}" and names only technologies your profile supports and the posting asks for.`});
  }
@@ -647,7 +662,7 @@ function genMessages(job,an,profile,opt){
  const why=`[ADD: one specific reason you want to work at ${co}, taken from their website or the posting]`;confirms.push('Company-specific motivation');
  const loc=job.location?` in ${job.location}`:'';
  /* cover letter */
- const para1=`I am applying for the ${ti} position at ${co}${loc}. ${roles.length?`My recent work includes ${roles.join(' and ')}, alongside earlier network service engineering at Huawei and IT support at Touchstone Systems.`:'My background spans DevOps, cloud infrastructure, network service engineering and IT support.'}${ms?` I am currently ${ms.status==='completed'?'a graduate of':'studying'} the ${ms.degree.replace(/^MSc, /,'MSc in ')} at ${ms.school.split(',')[0]}.`:''}`;
+ const para1=`I am applying for the ${ti} position at ${co}${loc}. ${roles.length?`My recent work includes ${roles.join(' and ')}, alongside earlier roles at ${[...new Set(profile.experience.map(e=>e.company))].filter(c=>!roles.join(' ').includes(c)).slice(0,2).join(' and ')}.`:`My background spans roles as ${[...new Set(profile.experience.map(e=>e.title))].slice(0,3).join(', ')}.`}${ms?` I am currently ${ms.status==='completed'?'a graduate of':'studying'} the ${ms.degree.replace(/^MSc, /,'MSc in ')} at ${ms.school.split(',')[0]}.`:''}`;
  const evLines=ev.map(x=>`In my role as ${x.e.title} at ${x.e.company}, I ${lcfirst(x.b.text)}.`);
  const para2=evLines.length?`The posting emphasises ${strong.slice(0,4).join(', ')||'infrastructure and operations work'}. Relevant examples from my experience: ${evLines.join(' ')}`:`I would like to discuss how my experience maps to the responsibilities in the posting.`;
  const para3=learning.length?`I am currently developing my skills in ${learning.join(', ')}, and I am comfortable working through unfamiliar tooling in a structured way.`:'';
@@ -687,7 +702,7 @@ function initState(){
  let st=null;try{st=raw?JSON.parse(raw):null}catch{st=null}
  if(!st||!st.profile){st={v:1,profile:seedProfile(),jobs:[],docs:[],settings:seedSettings(),meta:{lastExport:'',created:todayISO()}}}
  st.settings={...seedSettings(),...st.settings,weights:{...seedSettings().weights,...(st.settings||{}).weights}};
- st.meta=st.meta||{};st.docs=st.docs||[];st.jobs=st.jobs||[];
+ st.meta=st.meta||{};if(st.profile&&st.profile.seed==null)st.meta.oldSeed=true;st.docs=st.docs||[];st.jobs=st.jobs||[];
  S=st;
 }
 let saveT;
@@ -807,11 +822,12 @@ function vDashboard(){
  const applied=by(['Applied','Recruiter contacted']),interviews=by(['Interview']),offers=by(['Offer']);
  const due=J.filter(j=>j.followUp&&!['Rejected','Withdrawn','Offer'].includes(j.status)&&daysUntil(j.followUp)<=7).sort((a,b)=>a.followUp.localeCompare(b.followUp));
  const dl=J.filter(j=>j.deadline&&EARLY.includes(j.status)&&daysUntil(j.deadline)>=-1&&daysUntil(j.deadline)<=14).sort((a,b)=>a.deadline.localeCompare(b.deadline));
- const top=J.filter(j=>j.score!=null&&EARLY.includes(j.status)).sort((a,b)=>b.score-a.score).slice(0,6);
+ const top=J.filter(j=>j.score!=null&&EARLY.includes(j.status)).sort((a,b)=>b.score-a.score||((b.analysis&&b.analysis.raw)||0)-((a.analysis&&a.analysis.raw)||0)).slice(0,6);
  const p=S.profile;const alerts=[];
  if(!p.masterCvText.trim())alerts.push(['warn','Your master CV text is not saved yet. Paste it under My Profile & Master CV so the profile has an authoritative source.','profile']);
  if(!p.languages.some(l=>l.confirmed&&l.level))alerts.push(['warn','No language proficiency is confirmed. Postings that name a language will be marked unknown until you set it.','profile']);
  if(Object.values(p.workAuth).every(v=>v==='unknown'))alerts.push(['warn','Work authorization is unknown for every market. This limits scores to a maximum of 74 where a posting requires it.','profile']);
+ if(S.meta.oldSeed)alerts.unshift(['bad','This profile still holds the first seed data, not your uploaded resume. Load the resume data (jobs and saved documents are kept).','__seed']);
  const unv=p.experience.flatMap(e=>e.bullets.filter(b=>b.metric&&!b.metricVerified)).length;
  if(unv)alerts.push(['warn',`${unv} metric${unv>1?'s are':' is'} unverified and will be left out of generated CVs until you confirm ${unv>1?'them':'it'}.`,'profile']);
  if(!p.name||!p.email)alerts.push(['warn','Your name or email is missing, so generated documents will contain placeholders.','profile']);
@@ -820,7 +836,7 @@ function vDashboard(){
  const pipe=STATUSES.map(s=>[s,J.filter(j=>j.status===s).length]);const mx=Math.max(1,...pipe.map(x=>x[1]));
  return head('Dashboard','Your search at a glance. Nothing here runs in the background; reminders appear when you open the page.',`<button class="btn primary" data-view="find" type="button">Add a job</button>`)+
  `<div class="grid g4"><div class="kpi"><span class="label">Saved jobs</span><b>${J.length}</b></div><div class="kpi"><span class="label">To prepare</span><b>${prep.length}</b></div><div class="kpi"><span class="label">Applied</span><b>${applied.length}</b></div><div class="kpi"><span class="label">Interviews / offers</span><b>${interviews.length} / ${offers.length}</b></div></div>`+
- (alerts.length?`<div class="card"><div class="card-h"><h2>Profile checks</h2><span class="small muted">These affect accuracy</span></div>${alerts.map(a=>`<div class="note warn row" style="justify-content:space-between"><span>${esc(a[1])}</span><button class="btn sm" data-view="${a[2]}" type="button">Fix</button></div>`).join('')}</div>`:'')+
+ (alerts.length?`<div class="card"><div class="card-h"><h2>Profile checks</h2><span class="small muted">These affect accuracy</span></div>${alerts.map(a=>`<div class="note warn row" style="justify-content:space-between"><span>${esc(a[1])}</span>${a[2]==='__seed'?'<button class="btn sm primary" data-act="load-resume-seed" type="button">Load resume data</button>':`<button class="btn sm" data-view="${a[2]}" type="button">Fix</button>`}</div>`).join('')}</div>`:'')+
  `<div class="grid g-side"><div class="card"><div class="card-h"><h2>Best opportunities to prepare</h2><span class="small muted">Highest match first</span></div>${top.length?`<div class="tbl-wrap"><table><thead><tr><th>Role</th><th>Location</th><th class="num">Score</th><th>Recommendation</th><th></th></tr></thead><tbody>${top.map(j=>`<tr><td><b>${esc(j.title)}</b><br><span class="muted">${esc(j.company)}</span></td><td>${esc(j.location||j.country||'')}</td><td class="num">${scoreTag(j.score)}</td><td>${recPill(j.analysis&&j.analysis.rec)}</td><td><button class="btn sm" data-open-analyze="${j.id}" type="button">Open</button></td></tr>`).join('')}</tbody></table></div>`:`<div class="empty">No scored jobs yet. Add a job, then run its analysis.</div>`}</div>
  <div class="card"><h2>Follow-ups and deadlines</h2>${due.length||dl.length?`<ul class="list">${due.map(j=>`<li>${daysUntil(j.followUp)<0?'<span class="pill bad">Overdue</span>':'<span class="pill warn">'+(daysUntil(j.followUp)===0?'Today':'In '+daysUntil(j.followUp)+'d')+'</span>'}<span><b>${esc(j.company)}</b> follow-up ${esc(j.followUp)}</span></li>`).join('')}${dl.map(j=>`<li><span class="pill ${daysUntil(j.deadline)<=3?'bad':'warn'}">Deadline ${esc(j.deadline)}</span><span>${esc(j.company)}, ${esc(j.title)}</span></li>`).join('')}</ul>`:`<p class="muted">Nothing due in the next 7 days.</p>`}</div></div>`+
  `<div class="grid g2"><div class="card"><h2>Pipeline</h2><div class="list">${pipe.map(([s,n])=>`<div style="display:grid;grid-template-columns:130px 1fr 28px;gap:8px;align-items:center"><span class="small">${esc(s)}</span><div class="bar sm"><i style="width:${n/mx*100}%"></i></div><span class="mono small" style="text-align:right">${n}</span></div>`).join('')}</div></div>
@@ -1050,7 +1066,7 @@ function filtered(){
  if(f.status)r=r.filter(j=>j.status===f.status);
  if(f.q){const q=f.q.toLowerCase();r=r.filter(j=>[j.title,j.company,j.location,j.notes,j.recruiter].join(' ').toLowerCase().includes(q))}
  if(f.due)r=r.filter(j=>j.followUp&&daysUntil(j.followUp)<=7&&!['Rejected','Withdrawn'].includes(j.status));
- const cmp={score:(a,b)=>(b.score??-1)-(a.score??-1),followUp:(a,b)=>(a.followUp||'9').localeCompare(b.followUp||'9'),deadline:(a,b)=>(a.deadline||'9').localeCompare(b.deadline||'9'),updated:(a,b)=>(b.updated||'').localeCompare(a.updated||''),company:(a,b)=>a.company.localeCompare(b.company),status:(a,b)=>STATUSES.indexOf(a.status)-STATUSES.indexOf(b.status)}[f.sort]||(()=>0);
+ const cmp={score:(a,b)=>(b.score??-1)-(a.score??-1)||((b.analysis&&b.analysis.raw)||0)-((a.analysis&&a.analysis.raw)||0),followUp:(a,b)=>(a.followUp||'9').localeCompare(b.followUp||'9'),deadline:(a,b)=>(a.deadline||'9').localeCompare(b.deadline||'9'),updated:(a,b)=>(b.updated||'').localeCompare(a.updated||''),company:(a,b)=>a.company.localeCompare(b.company),status:(a,b)=>STATUSES.indexOf(a.status)-STATUSES.indexOf(b.status)}[f.sort]||(()=>0);
  return r.sort(cmp);
 }
 function trackerTable(){
@@ -1364,6 +1380,7 @@ const ACT={
   showMsg('imp-res','good',esc(r.ok));render();
  },
  'reset-all':t=>{if(t.dataset.yes){try{localStorage.removeItem(LS_KEY)}catch{}ui={jobId:null,editingId:null,filter:{status:'',q:'',due:false,sort:'score'},draft:null,msg:null,aiText:{},profTab:'profile'};initState();ui.confirm=null;render();toast('All data reset')}else{ui.confirm='reset-allx';render()}},
+ 'load-resume-seed':()=>{S.profile=seedProfile();delete S.meta.oldSeed;S.draft=null;S.pkg=null;S.jobs.forEach(j=>{j.analysis=null});S.jobs.forEach(j=>ensureAnalysis(j));save();render();toast('Profile replaced with your resume data')},
  'prof-tab':t=>{ui.profTab=t.dataset.tab;render()},
  'add-role':()=>{S.profile.experience.unshift({id:uid(),title:'',company:'',dates:'',bullets:[{id:uid(),text:'',metric:'',metricVerified:false}]});save();render()},
  'del-role':t=>{if(t.dataset.yes){S.profile.experience=S.profile.experience.filter(e=>e.id!==t.dataset.id);ui.confirm=null;save();render()}else{ui.confirm='del-role'+t.dataset.id;render()}},
