@@ -218,8 +218,8 @@ function seedProfile(){
   name:'Muhammad Rizwan',headline:'DevOps / Systems Engineer',email:'rizwanislam62@gmail.com',phone:'',location:'Oslo, Norway',links:'linkedin.com/in/rizwancomputerengineer',
   summary:'DevOps / Systems Engineer with hands-on experience in Docker, GitHub Actions and Jenkins CI/CD pipelines, Git-based version control, and Linux system administration. Strong understanding of networking (TCP/IP, DNS, firewalls) and cloud platforms (AWS, Azure). Experienced in building centralized security scanning pipelines, containerized microservice architectures, and infrastructure automation. Familiar with VMware vSphere, IaC tools (Terraform), and security best practices in DevOps environments.',
   targets:{primary:['DevOps Engineer','Cloud Engineer','Junior DevOps Engineer','Associate DevOps Engineer','Cloud Support Engineer','Platform Engineer'],secondary:['IT Infrastructure Engineer','Systems Engineer','Network Engineer','Cloud Security Engineer','IT Support Engineer'],markets:['Norway','Netherlands'],cities:['Oslo']},
-  workAuth:{Norway:'unknown',Netherlands:'unknown',Other:'unknown'},
-  languages:[{id:uid(),lang:'English',level:'',confirmed:false}],
+  workAuth:{Norway:'yes',Netherlands:'yes',Other:'unknown'},
+  languages:[{id:uid(),lang:'English',level:'fluent',confirmed:true}],
   years:{total:5,relevant:1,estimated:true},
   experience:[
    {id:uid(),title:'DevOps Engineer',company:'Sideline B.V.',dates:'02/2026 - 08/2026',bullets:[
@@ -263,7 +263,7 @@ function seedProfile(){
    {id:uid(),name:'Azure infrastructure for internal systems',desc:'Created Azure-based infrastructure for internal systems with Active Directory, VPN, and backups'},
    {id:uid(),name:'Hub-and-spoke network with Terraform',desc:'Developed Hub and 2 Spokes, Azure Firewall, Virtual Network, Virtual Machine, MySQL, Private Endpoint, VNET Peering, UDR using Terraform scripts'},
    {id:uid(),name:'Security and governance in Azure',desc:'Configured Network Security Groups (NSGs) and Azure Policies to meet compliance, Azure Active Directory, and IAM MFA'}],
-  masterCvText:'',masterCvUpdated:'',seed:'resume-2026-10'
+  masterCvText:'',masterCvUpdated:'',seed:'resume-2026-10b'
  };
 }
 function seedSettings(){return{weights:{tech:30,exp:25,resp:20,edu:10,elig:15},applyAt:70,gapsAt:50,followUpDays:7,cvPages:1,language:'English',includeUnverified:false,includePhone:false,includeLinks:true}}
@@ -449,7 +449,7 @@ function analyzeJob(job,profile,settings){
  const langItems=[];
  for(const[name,rx]of LANGS){
   let level=null;
-  for(const l of lines){if(!rx.test(l))continue;const lv=PREF_RX.test(l)?'preferred':LANG_REQ_RX.test(l)?'required':'mentioned';
+  for(const x of cl){if(x.head||!rx.test(x.l))continue;const lv=(PREF_RX.test(x.l)||x.level==='preferred')?'preferred':LANG_REQ_RX.test(x.l)?'required':'mentioned';
    if(!level||(lv==='required')||(lv==='mentioned'&&level==='preferred'))level=lv}
   if(level)langItems.push({lang:name,level});
  }
@@ -603,7 +603,8 @@ const assembleCV=s=>SEC_ORDER.map(([k,h])=>k==='header'?s[k]:(s[k]&&s[k].trim()?
 function numbersIn(t){return(String(t).match(/\d[\d,.]*\+?%?/g)||[]).map(x=>x.replace(/[.,]+$/,''))}
 function unsupported(text,profile,allowLearning){
  const corp=profileCorpus(profile);const out=[];
- detectTerms(text,false).forEach(t=>{const e=termEvidence(t,corp).level;if(e==='missing')out.push({k:t.k,sev:'fail'});else if((e==='learning'||e==='related')&&!allowLearning)out.push({k:t.k,sev:'warn'})});
+ const ptxt=allProfileText(profile);
+ detectTerms(text,false).forEach(t=>{let e=termEvidence(t,corp).level;if(e==='missing'&&has(ptxt,termAl(t,true)))e='strong';if(e==='missing')out.push({k:t.k,sev:'fail'});else if((e==='learning'||e==='related')&&!allowLearning)out.push({k:t.k,sev:'warn'})});
  const pn=new Set(numbersIn(allProfileText(profile)));
  const nums=[...new Set(numbersIn(text))].filter(n=>!pn.has(n)&&!pn.has(n.replace(/[%+]$/,'')));
  return{terms:out,nums};
@@ -702,7 +703,7 @@ function initState(){
  let st=null;try{st=raw?JSON.parse(raw):null}catch{st=null}
  if(!st||!st.profile){st={v:1,profile:seedProfile(),jobs:[],docs:[],settings:seedSettings(),meta:{lastExport:'',created:todayISO()}}}
  st.settings={...seedSettings(),...st.settings,weights:{...seedSettings().weights,...(st.settings||{}).weights}};
- st.meta=st.meta||{};if(st.profile&&st.profile.seed==null)st.meta.oldSeed=true;st.docs=st.docs||[];st.jobs=st.jobs||[];
+ st.meta=st.meta||{};if(st.profile&&st.profile.seed!=='resume-2026-10b')st.meta.oldSeed=true;st.docs=st.docs||[];st.jobs=st.jobs||[];
  S=st;
 }
 let saveT;
@@ -827,7 +828,7 @@ function vDashboard(){
  if(!p.masterCvText.trim())alerts.push(['warn','Your master CV text is not saved yet. Paste it under My Profile & Master CV so the profile has an authoritative source.','profile']);
  if(!p.languages.some(l=>l.confirmed&&l.level))alerts.push(['warn','No language proficiency is confirmed. Postings that name a language will be marked unknown until you set it.','profile']);
  if(Object.values(p.workAuth).every(v=>v==='unknown'))alerts.push(['warn','Work authorization is unknown for every market. This limits scores to a maximum of 74 where a posting requires it.','profile']);
- if(S.meta.oldSeed)alerts.unshift(['bad','This profile still holds the first seed data, not your uploaded resume. Load the resume data (jobs and saved documents are kept).','__seed']);
+ if(S.meta.oldSeed)alerts.unshift(['bad','This profile predates your resume and your confirmed eligibility (right to work in Norway and the Netherlands, English fluent). Load it; jobs and saved documents are kept.','__seed']);
  const unv=p.experience.flatMap(e=>e.bullets.filter(b=>b.metric&&!b.metricVerified)).length;
  if(unv)alerts.push(['warn',`${unv} metric${unv>1?'s are':' is'} unverified and will be left out of generated CVs until you confirm ${unv>1?'them':'it'}.`,'profile']);
  if(!p.name||!p.email)alerts.push(['warn','Your name or email is missing, so generated documents will contain placeholders.','profile']);

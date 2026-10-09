@@ -1,0 +1,51 @@
+Muhammad Rizwan
+DevOps Engineer
+Oslo, Norway, rizwanislam62@gmail.com, linkedin.com/in/rizwancomputerengineer
+
+SUMMARY
+DevOps / Systems Engineer targeting DevOps Engineer roles in Netherlands. Hands-on experience with Azure, CI/CD, Infrastructure as Code, Linux, Virtualization, Networking, gained as DevOps Engineer, Cloud Infrastructure Engineer, IP Datacom Engineer. Currently studying for MSc in Applied Computer and Information Technology (Specialization: Cloud-Based Services and Operations) at OsloMet - Oslo Metropolitan University (08/2026 - 2028). Certification: Microsoft Azure Administrator Associate (AZ-104).
+
+TECHNICAL SKILLS
+Cloud: Microsoft Azure, AWS CI/CD, Azure AD, Azure Virtual Machine, Azure Virtual Network, AWS, Oracle Cloud
+Systems and Support: Linux system administration, PowerShell, Bash, VMware vSphere (familiar), Office 365, Active Directory, Windows Server
+Containers and CI/CD: GitHub Actions (self-hosted runners), Infrastructure as Code with Terraform, Docker, Docker Compose, Terraform, Git, Jenkins
+Networking: VRRP, TCP/IP, Nginx (reverse proxy, upstream configs), OSPF, BGP, IS-IS, MPLS, DHCP, DNS, Firewalls
+Security: Semgrep, Trivy, Gitleaks, ClamAV, Vulnerability scanning
+Other: Incident response, VLANs, NAT, NTP, IP subnetting (IPv4/IPv6), ALB, Microsoft Defender
+
+EXPERIENCE
+DevOps Engineer, Sideline B.V. (02/2026 - 08/2026)
+- Administered AWS infrastructure (EC2, ECR, RDS, S3, CloudWatch/SNS alerting) and Azure infrastructure (VMs, Automation Runbooks with Managed Identity, Container Instances) for production workloads
+- Diagnosed a recurring production EC2 outage traced to a Java-based vulnerability scanner exhausting memory on an under-resourced instance; resolved via swap configuration, per-container memory limits, and PSI-based monitoring
+- Deployed and managed multiple applications on shared hosts using Nginx as a reverse proxy, routing incoming traffic to the correct backend service based on domain/path-based rules and upstream configs
+
+System Engineer, Touchstone Communications (07/2021 - 01/2023)
+- Automated backups, logs, and provisioning using PowerShell and Bash
+- Configured Azure firewall rules, VPN gateways, and secure access
+- Performed vulnerability scanning, patching, and OS hardening
+
+Cloud Infrastructure Engineer, Appworks (04/2025 - 05/2025)
+- Supported CI/CD pipelines for infrastructure changes
+- Automated deployments using Terraform and ARM templates
+- Configured Azure VNets, VNet Peering, and Load Balancers. Implemented Application Gateway with WAF
+
+IP Datacom Engineer, GSC-Huawei (01/2023 - 04/2025)
+- Rolled out new sites and managed service migrations and VRRP configurations for backup
+- Integrated FTK and live configurations on routers and switches, including NE0E, NE8000, ATN980C, and S93000
+- Achieved 100% service uptime during critical migrations
+
+PROJECTS
+- Security and governance in Azure: Configured Network Security Groups (NSGs) and Azure Policies to meet compliance, Azure Active Directory, and IAM MFA
+- Azure infrastructure for internal systems: Created Azure-based infrastructure for internal systems with Active Directory, VPN, and backups
+
+EDUCATION
+MSc in Applied Computer and Information Technology (Specialization: Cloud-Based Services and Operations), OsloMet - Oslo Metropolitan University (08/2026 - 2028), in progress
+Bachelor of Science in Computer Engineering, COMSATS University Islamabad, Abbottabad (09/2016 - 09/2020)
+
+CERTIFICATIONS
+- Microsoft Azure Administrator Associate (AZ-104)
+- Cisco CCNA Routing and Switching (Training Certificate)
+- AWS Technical Essentials
+- Docker Training Course for the Absolute Beginner
+- AWS Cloud Practitioner
+- Oracle Cloud Infrastructure

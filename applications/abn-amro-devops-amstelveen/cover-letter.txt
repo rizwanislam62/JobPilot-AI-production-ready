@@ -1,0 +1,12 @@
+Dear Hiring Team,
+
+I am applying for the DevOps Engineer position at ABN AMRO in Amstelveen. My recent work includes DevOps Engineer at Sideline B.V. and System Engineer at Touchstone Communications, alongside earlier roles at Appworks and GSC-Huawei. I am currently studying the MSc in Applied Computer and Information Technology (Specialization: Cloud-Based Services and Operations) at OsloMet - Oslo Metropolitan University.
+
+The posting emphasises Azure, CI/CD, Infrastructure as Code, Linux. Relevant examples from my experience: In my role as DevOps Engineer at Sideline B.V., I administered AWS infrastructure (EC2, ECR, RDS, S3, CloudWatch/SNS alerting) and Azure infrastructure (VMs, Automation Runbooks with Managed Identity, Container Instances) for production workloads. In my role as System Engineer at Touchstone Communications, I automated backups, logs, and provisioning using PowerShell and Bash. In my role as DevOps Engineer at Sideline B.V., I diagnosed a recurring production EC2 outage traced to a Java-based vulnerability scanner exhausting memory on an under-resourced instance; resolved via swap configuration, per-container memory limits, and PSI-based monitoring.
+
+I am currently developing my skills in Logging, and I am comfortable working through unfamiliar tooling in a structured way.
+
+[ADD: one specific reason you want to work at ABN AMRO, taken from their website or the posting] I would welcome a conversation about how my experience fits the team. [CONFIRM: your availability and start date alongside your MSc studies]
+
+Kind regards,
+Muhammad Rizwan
